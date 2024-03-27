@@ -1,0 +1,15 @@
+:root {
+	/* ------- colors ------- */
+	--primary-color: #27272a;
+	--secondary-color: #65656d;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--tw-text-opacity: 1;
+	--link-color: rgb(15 118 110 / var(--tw-text-opacity));
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Poppins", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+}
