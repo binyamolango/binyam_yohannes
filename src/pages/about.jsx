@@ -47,7 +47,19 @@ const About = () => {
                 </div>
 
                 <div className="subtitle about-subtitle">
-                  {INFO.about.description}
+                  {INFO.about.description1}
+                </div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description2}
+                </div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description3}
+                </div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description4}
                 </div>
               </div>
 
