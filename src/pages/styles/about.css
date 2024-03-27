@@ -1,78 +1,78 @@
 .about-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
+  display: flex;
+  justify-content: left;
+  padding-top: 25px;
 }
 
 .about-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
-	margin-top: -6px;
+  display: flex;
+  position: fixed;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  top: 4vh;
+  margin-top: -6px;
 }
 
 .about-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 150px;
-	padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .about-main {
-	display: flex;
+  display: flex;
 }
 
 .about-right-side {
-	width: 100%;
+  width: 100%;
 }
 
 .about-title {
-	width: 90% !important;
+  width: 90% !important;
 }
 
 .about-subtitle {
-	width: 85% !important;
+  width: 85% !important;
 }
 
 .about-left-side {
-	display: flex;
-	flex-direction: column;
-	width: 75%;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
 }
 
 .about-image-container {
-	max-width: 420px;
+  max-width: 420px;
 }
 
 .about-image-wrapper {
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	border-radius: 10%;
-	transform: rotate(3deg);
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10%;
+  transform: rotate(3deg);
 }
 
 .about-image-wrapper img {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .about-socials {
-	padding-top: 50px;
-	padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about-socials-mobile {
-	display: none;
+  display: none;
 }
 
 .phone-wrapper a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .card-text {
@@ -92,7 +92,7 @@
 }
 
 .card {
-	border: none;
+  border: none;
   background-color: #f7f7f7;
 }
 
@@ -100,88 +100,88 @@
   background-color: #f0f0f0;
 }
 
-.skills-card-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-  min-height: 316px;
-	z-index: 20;
-	margin: 0 auto;
-	padding: 0;
-	padding-top: 20px;
-}
-
-.skills-card-body .tag {
-  background-color: #fff;
-  padding: 0.5em 0.75em;
-	font-size: 0.75rem;
-  color: #0f766e;
-	font-weight: 500;
-}
-
-.skills-card-body img {
-  margin: 0;
-	width: 150px;
-}
-
-.skills-card-body .card-title {
-  margin-top: -1.25em;
-	padding: 0;
-}
-
 .card-title {
   font-size: 1.25rem;
   color: var(--secondary-color);
 }
 
+.skills-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 316px;
+  z-index: 20;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.skills-card-body .tag {
+  background-color: #fff;
+  padding: 0.5em 0.75em;
+  font-size: 0.75rem;
+  color: #0f766e;
+  font-weight: 500;
+}
+
+.skills-card-body img {
+  margin: 0;
+  width: 150px;
+}
+
+.skills-card-body .card-title {
+  margin-top: -1.25em;
+  padding: 0;
+}
+
 @media (max-width: 1024px) {
-	.about-logo {
-		z-index: 100;
-	}
+  .about-logo {
+    z-index: 100;
+  }
 
-	.about-main {
-		flex-direction: column;
-	}
+  .about-main {
+    flex-direction: column;
+  }
 
-	.about-subtitle {
-		padding-top: 20px !important;
-	}
+  .about-subtitle {
+    padding-top: 20px !important;
+  }
 
-	.about-left-side {
-		flex-basis: 100%;
-		order: 1;
-	}
+  .about-left-side {
+    flex-basis: 100%;
+    order: 1;
+  }
 
-	.about-right-side {
-		flex-basis: 100%;
-		order: 2;
-	}
+  .about-right-side {
+    flex-basis: 100%;
+    order: 2;
+  }
 
-	.about-image-container {
-		padding-bottom: 40px;
-	}
+  .about-image-container {
+    padding-bottom: 40px;
+  }
 
-	.about-socials {
-		display: none;
-	}
+  .about-socials {
+    display: none;
+  }
 
-	.about-socials-mobile {
-		padding-top: 30px;
-		display: flex;
-	}
+  .about-socials-mobile {
+    padding-top: 30px;
+    display: flex;
+  }
 
-	.skills-card-body {
-		padding: 20px 5px;
-	}
+  .skills-card-body {
+    padding: 20px 5px;
+  }
 }
 
 @media (max-width: 600px) {
-	.about-container {
-		padding-top: 60px;
-	}
+  .about-container {
+    padding-top: 60px;
+  }
 
-	.about-image-container {
-		width: 80%;
-	}
+  .about-image-container {
+    width: 80%;
+  }
 }
