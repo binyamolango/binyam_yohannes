@@ -127,3 +127,17 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 600px) {
+	.title {
+		font-size: 2.5rem;
+	}
+
+	.homepage-title {
+		font-size: 1.5rem;
+	}
+
+	.title-2 {
+		font-size: 2rem;
+	}
+}

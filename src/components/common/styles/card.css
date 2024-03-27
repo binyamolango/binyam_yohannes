@@ -1,34 +1,35 @@
 @import "../../../data/styles.css";
 
-.card {
+.works__card {
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	outline: 2px solid #f4f4f5;
+	max-width: 550px;
 }
 
-.card-container {
+.works__card-container {
 	padding: 30px;
 	padding-bottom: 5px;
 }
 
-.card-header {
+.works__card-header {
 	display: flex;
 	align-items: center;
 }
 
-.card-icon {
+.works__card-icon {
 	font-size: 15px;
 	color: var(--tertiary-color);
 }
 
-.card-title {
+.works__card-title {
 	color: var(--secondary-color);
 	font-size: 14px;
 	padding-left: 20px;
 	font-weight: 650;
 }
 
-.card-body {
+.works__card-body {
 	padding-top: 40px;
 	font-size: 15px;
 }
