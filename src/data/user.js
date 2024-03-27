@@ -27,9 +27,15 @@ const INFO = {
   },
 
   about: {
-    title: 'I’m Tharindu N. I live in Sri Lanka, where I design the future.',
-    description:
-      "I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+    title: 'Hey 👋, I’m Binyam Yohannes',
+    description1:
+      "A full-stack web developer who loves to use technology to solve intricate challenges. With over 40 projects under my belt, I'm always motivated to tackle the next problem. As a QA engineer and software developer with expertise in pair programming and remote work, I'm fluent in various languages, frameworks, and technologies, so I efficiently ramp up to tackle new projects.",
+    description2:
+      "My passion for math and deep tech keeps me driving towards my aspiration to become a data scientist. But, I won't just limit myself to the digital and technical details sphere. My interest in areas like environmental, agricultural, and health issues drives me to focus on impactful solutions that bridge the gap between technical excellence and critical global matters.",
+    description3:
+      "I'm always excited to explore new things, both in software development and beyond. I like playing the guitar, reading books, and going out of doors when I am not working.",
+    description4:
+      'If you would like to get more information about me or connect for the next project, contacting me at any time is fine just send an email or a message through LinkedIn, or visit my GitHub. I am open to new opportunities.',
   },
 
   projects: [

@@ -1,6 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { useEffect } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Helmet } from 'react-helmet';
+import {
+  Container, Row, Col, Card,
+} from 'react-bootstrap';
 
 import NavBar from '../components/common/navBar';
 import Footer from '../components/common/footer';
@@ -47,7 +50,19 @@ const About = () => {
                 </div>
 
                 <div className="subtitle about-subtitle">
-                  {INFO.about.description}
+                  {INFO.about.description1}
+                </div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description2}
+                </div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description3}
+                </div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description4}
                 </div>
               </div>
 
@@ -71,6 +86,61 @@ const About = () => {
               <Socials />
             </div>
           </div>
+
+          <section className="skills">
+            <Container>
+              <Row className="row-cols-1 row-cols-md-3 g-4 cards_cont">
+                <Col>
+                  <Card>
+                    <Card.Body className="skills-card-body">
+                      <Card.Img src="./icon-languages.svg" alt="icon-languages" />
+                      <Card.Title>Languages</Card.Title>
+                      <div className="card-text">
+                        <div className="tag">JavaScript</div>
+                        <div className="tag">Ruby</div>
+                        <div className="tag">HTML</div>
+                        <div className="tag">CSS</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+
+                <Col>
+                  <Card>
+                    <Card.Body className="skills-card-body">
+                      <Card.Img src="./icon-frameworks.svg" alt="icon-frameworks" />
+                      <Card.Title>Frameworks</Card.Title>
+                      <div className="card-text">
+                        <div className="tag">React.js</div>
+                        <div className="tag">Bootstrap</div>
+                        <div className="tag">Ruby on Rails</div>
+                        <div className="tag">RSpec</div>
+                        <div className="tag">Capybara</div>
+                        <div className="tag">Selenium</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+
+                <Col>
+                  <Card>
+                    <Card.Body className="skills-card-body">
+                      <Card.Img src="./icon-skills.svg" alt="icon-skills" />
+                      <Card.Title>Skills</Card.Title>
+                      <div className="card-text">
+                        <div className="tag">Database Management</div>
+                        <div className="tag">Version Control</div>
+                        <div className="tag">CLI</div>
+                        <div className="tag">Web Development</div>
+                        <div className="tag">API Design</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
           <div className="page-footer">
             <Footer />
           </div>

@@ -8,16 +8,16 @@ import './styles/card.css';
 const Card = (props) => {
   const { icon, title, body } = props;
   return (
-    <div className="card">
-      <div className="card-container">
-        <div className="card-header">
-          <div className="card-icon">
+    <div className="works__card">
+      <div className="works__card-container">
+        <div className="works__card-header">
+          <div className="works__card-icon">
             <FontAwesomeIcon icon={icon} />
           </div>
-          <div className="card-title">{title}</div>
+          <div className="works__card-title">{title}</div>
         </div>
-        <div className="card-body">
-          <div className="card-text">{body}</div>
+        <div className="works__card-body">
+          <div className="works__card-text">{body}</div>
         </div>
       </div>
     </div>

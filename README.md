@@ -11,7 +11,6 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
 - [👥 Author](#author)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -58,7 +57,7 @@ To use this project, Clone this repository to your desired folder by pasting thi
 To install the project's dependencies, run:
 
 ```
-  bundle install
+  npm install
   yarn install
 ```
 
@@ -67,15 +66,7 @@ To install the project's dependencies, run:
 To run the project, execute the following command:
 
 ```
-  bin/dev
-```
-
-### Run tests <a name="run tests"></a>
-
-To test, run:
-
-```
-  npm test
+  npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
