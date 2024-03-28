@@ -28,7 +28,7 @@
 .socials-container {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .contact-socials {
@@ -50,12 +50,6 @@
   font-weight: 400;
 }
 
-.contact_row .title {
-  width: 100%;
-  text-align: left;
-  font-size: 2em;
-}
-
 .form {
   width: 100%;
 }
@@ -69,6 +63,22 @@
   margin: 1.25em 0;
 }
 
+.alert__msg {
+  color: rgb(15 118 110);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact_row {
+    margin: 2em 0 0 0;
+  }
+
+  .contact_row h1 {
+    width: 100%;
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contact_row {
     flex-wrap: wrap;
@@ -79,11 +89,5 @@
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
-  }
-
-  .contact_row .title {
-    width: 100%;
-    text-align: left;
-    font-size: 2em;
   }
 }

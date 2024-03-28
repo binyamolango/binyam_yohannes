@@ -23,6 +23,9 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [alert, setAlert] = useState('');
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -38,14 +41,14 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const headers = {
         'Content-Type': 'application/json',
-        'X-Master-Key': '$2a$10$qPVMXggkVAEfuO8LJO3aVOVDWvx2LF9eWZq/uEcedx.vfBBGIjMI6',
         'X-Access-Key': '$2a$10$0/4aQ58zY3xViaZ8RQOT6e6SYP2FJmqBxMXPZzXeBVAq6hl.14.wC',
       };
-      const response = await fetch('https://api.jsonbin.io/v3', {
+      const response = await fetch('https://api.jsonbin.io/v3/b', {
         headers,
         method: 'POST',
         body: JSON.stringify({
@@ -55,10 +58,17 @@ const Contact = () => {
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
+      } else {
+        setLoading(false);
+        setEmail('');
+        setName('');
+        setMessage('');
+        setAlert('Message sent successfully!');
       }
 
       return await response.json();
     } catch (error) {
+      setError(error.message);
       return { error: error.message };
     }
   };
@@ -95,6 +105,7 @@ const Contact = () => {
               </h1>
 
               <Form onSubmit={handleSubmit} className="form">
+                <div className="alert__msg">{alert}</div>
                 <Form.Group controlId="username" className="mb-3">
                   <Form.Control
                     type="text"
@@ -126,7 +137,9 @@ const Contact = () => {
                   />
                 </Form.Group>
                 <div className="project_btn_cont">
-                  <Button variant="secondary" type="submit" className="project_btn">Get in touch</Button>
+                  {loading ? <Button variant="secondary" type="submit" className="project_btn" disabled>Get in touch</Button>
+                    : <Button variant="secondary" type="submit" className="project_btn">Get in touch</Button>}
+                  {error && <div>{error}</div>}
                 </div>
               </Form>
             </div>
