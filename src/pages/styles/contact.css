@@ -67,22 +67,6 @@
   color: rgb(15 118 110);
 }
 
-.social__medias__cont {
-  display: flex;
-}
-
-.email::before {
-  border: none;
-}
-
-.email {
-  margin-top: -10px;
-  padding-left: 60px;
-  margin-left: 60px;
-  padding-top: 20px;
-  border-left: 3px solid #f4f4f5;
-}
-
 @media screen and (max-width: 1024px) {
   .contact_row {
     margin: 1.5em 0 0 0;
