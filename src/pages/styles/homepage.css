@@ -21,14 +21,14 @@
 }
 
 .homepage-name {
-  width: 85% !important;
+  width: 85%;
   color: var(--primary-color);
   font-size: 3rem;
   line-height: 3.5rem;
 }
 
 .homepage-title {
-  width: 85% !important;
+  width: 85%;
   font-size: 2rem;
   line-height: 2.5rem;
   color: rgb(63 63 70);
@@ -108,15 +108,17 @@
     flex-direction: column;
   }
 
+  .homepage-name {
+    width: 100%;
+  }
+
   .homepage-title {
     width: 100% !important;
-    margin-top: 20px;
     order: 2;
   }
 
   .homepage-subtitle {
     width: 100% !important;
-    margin-top: 10px;
     order: 3;
   }
 
@@ -141,5 +143,11 @@
     flex-basis: auto;
     margin-left: -25px;
     margin-right: -25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-first-area-left-side {
+    width: 100%;
   }
 }
