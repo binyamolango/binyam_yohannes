@@ -73,11 +73,12 @@
 
 .tag2 {
   display: inline-block;
-  background-color: var(--tertiary-color);
-  color: #fff;
+  background-color: var(--quaternary-color);
+  color: rgb(15 118 110 );
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
   margin: 0.5em;
 }
 
