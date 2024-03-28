@@ -39,9 +39,9 @@
 
 .contact_row {
   display: flex;
-  gap: 2em;
+  gap: 1em;
   align-items: center;
-  margin: 4em 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 .contact_row h1 {
@@ -67,9 +67,25 @@
   color: rgb(15 118 110);
 }
 
+.social__medias__cont {
+  display: flex;
+}
+
+.email::before {
+  border: none;
+}
+
+.email {
+  margin-top: -10px;
+  padding-left: 60px;
+  margin-left: 60px;
+  padding-top: 20px;
+  border-left: 3px solid #f4f4f5;
+}
+
 @media screen and (max-width: 1024px) {
   .contact_row {
-    margin: 2em 0 0 0;
+    margin: 1.5em 0 0 0;
   }
 
   .contact_row h1 {
@@ -82,12 +98,28 @@
 @media screen and (max-width: 768px) {
   .contact_row {
     flex-wrap: wrap;
-    margin: 2em 0 0 0;
+    margin: 1.5em 0 0 0;
   }
 
   .contact_row h1 {
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .social__medias__cont {
+    display: block;
+  }
+
+  .email {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .email::before {
+    border-top: 3px solid #f4f4f5;
   }
 }
