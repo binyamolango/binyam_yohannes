@@ -40,20 +40,20 @@ const INFO = {
 
   projects: [
     {
-      img: './medical_appointment_app.png',
-      name: 'Medical Appointment App',
+      img: './medical_appointment_app.jpg',
+      name: 'Medical Appointment',
       stacks: ['Ruby on Rails', 'PostgreSQL', 'React', 'TailwindCSS'],
       desc: 'A web app for reserving doctors simplifies the process of scheduling medical appointments. It allows users to browse & select available doctors, view their profiles and specialties and book appointments based on their preferred date and time. The application streamlines the reservation process, saving time for both patients & healthcare providers.',
       live: 'https://capstone-module-front-end.vercel.app/',
       source: 'https://github.com/binyamolango/capstone-module-front-end',
     },
     {
-      img: './recipe_app.png',
-      name: 'Recipe App',
+      img: './budget_app.jpg',
+      name: 'Budget App',
       stacks: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap'],
-      desc: "An app that keeps track of all users' recipes and ingredients. It will allow the user to save ingredients, keep track of what they have, create recipes, and generate a shopping list based on what the user have and missing from a recipe.",
-      live: 'https://edenic-recipe-i1dt.onrender.com/',
-      source: 'https://github.com/binyamolango/recipe_app2',
+      desc: 'A mobile web application where users can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.',
+      live: 'https://edenic-budget-app.onrender.com/',
+      source: 'https://github.com/binyamolango/budget_app',
     },
     {
       img: './meal_app.png',
@@ -64,7 +64,7 @@ const INFO = {
       source: 'https://github.com/binyamolango/meal-app',
     },
     {
-      img: './weather_app.png',
+      img: './weather_app.jpg',
       name: 'Weather App',
       stacks: ['React', 'Redux', 'CSS', 'JavaScript'],
       desc: 'A mobile app for checking the weather conditions of any city worldwide.',

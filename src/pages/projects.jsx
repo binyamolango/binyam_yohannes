@@ -41,8 +41,6 @@ const Projects = () => {
             <div className="title projects-title">
               My Recent Works
             </div>
-
-            {/* AllProjects includes the list and the popup now */}
             <AllProjects />
           </div>
           <div className="page-footer">

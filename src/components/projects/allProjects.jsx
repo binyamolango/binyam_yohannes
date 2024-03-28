@@ -1,7 +1,9 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Card, Button, Modal } from 'react-bootstrap';
+import {
+  Card, Button, Modal, Container, Row, Col,
+} from 'react-bootstrap';
 import './styles/allProjects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
@@ -9,20 +11,25 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import INFO from '../../data/user';
 
 const ProjectCard = ({ project, onProjectSelect }) => (
-  <Card className="card">
-    <Card.Img src={project.img} className="card-img-top" alt={project.name} />
-    <Card.Body>
-      <Card.Title>{project.name}</Card.Title>
-      <div className="card-text">
-        {project.stacks.map((stack) => (
-          <div key={stack} className="tag">{stack}</div>
-        ))}
+  <Col xs={12} md={6} xl={4} className="cards_cont">
+    <Card className="bg-light text-white">
+      <Card.Img src={project.img} className="card-img-top" alt={project.name} />
+      <div className="card-overlay">
+        <Card.ImgOverlay>
+          <Card.Title>{project.name}</Card.Title>
+          <div className="card-text">
+            {project.stacks.map((stack) => (
+              <div key={stack} className="tag tag2">{stack}</div>
+            ))}
+          </div>
+          <div className="project_btn_cont">
+            <Button variant="success" className="project_btn" onClick={onProjectSelect}>See project</Button>
+          </div>
+        </Card.ImgOverlay>
       </div>
-      <div className="project_btn_cont">
-        <Button variant="primary" onClick={onProjectSelect}>See project</Button>
-      </div>
-    </Card.Body>
-  </Card>
+    </Card>
+  </Col>
+
 );
 
 const AllProjects = () => {
@@ -37,8 +44,8 @@ const AllProjects = () => {
   };
 
   return (
-    <div className="all-projects-container">
-      <div className="row row-cols-1 row-cols-md-3 g-4 cards_cont">
+    <Container>
+      <Row>
         {INFO.projects.map((project) => (
           <ProjectCard
             key={project.name}
@@ -46,34 +53,34 @@ const AllProjects = () => {
             onProjectSelect={() => onProjectSelect(project)}
           />
         ))}
-      </div>
+      </Row>
 
-      <Modal show={selectedProject} onHide={closePopup}>
+      <Modal id="popup" show={selectedProject} onHide={closePopup}>
         <Modal.Header closeButton>
           <Modal.Title>{selectedProject && selectedProject.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Card.Img src={selectedProject && selectedProject.img} className="card-img-top" alt="..." />
-          <div className="card-text">
+          <div className="card-text card-text2">
             {selectedProject && selectedProject.stacks.map((stack) => (
-              <div key={stack} className="tag">{stack}</div>
+              <div key={stack} className="tag tag2">{stack}</div>
             ))}
           </div>
           <p className="card-text">{selectedProject && selectedProject.desc}</p>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" href={selectedProject && selectedProject.live} target="_blank" rel="noopener noreferrer">
+        <Modal.Footer className="project_btn_cont btn_row">
+          <Button variant="success" className="project_btn" href={selectedProject && selectedProject.live} target="_blank" rel="noopener noreferrer">
             See live
             <FontAwesomeIcon icon={faLink} />
           </Button>
 
-          <Button variant="secondary" href={selectedProject && selectedProject.source} target="_blank" rel="noopener noreferrer">
+          <Button variant="success" className="project_btn" href={selectedProject && selectedProject.source} target="_blank" rel="noopener noreferrer">
             See source
             <FontAwesomeIcon icon={faGithub} />
           </Button>
         </Modal.Footer>
       </Modal>
-    </div>
+    </Container>
   );
 };
 
