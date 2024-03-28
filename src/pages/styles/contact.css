@@ -1,7 +1,7 @@
 .contact-logo-container {
   display: flex;
   justify-content: left;
-  padding-top: 25px;
+  padding-top: 55px;
 }
 
 .contact-logo {
@@ -28,11 +28,82 @@
 .socials-container {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .contact-socials {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.contact_row {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 1em 0 0 0;
+}
+
+.contact_row h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.form {
+  width: 100%;
+}
+
+.form input {
+  margin: 1.25em 0;
+}
+
+.form .project_btn_cont {
+  text-align: left;
+  margin: 1.25em 0;
+}
+
+.alert__msg {
+  color: rgb(15 118 110);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact_row {
+    margin: 1.5em 0 0 0;
+  }
+
+  .contact_row h1 {
+    width: 100%;
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_row {
+    flex-wrap: wrap;
+    margin: 1.5em 0 0 0;
+  }
+
+  .contact_row h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .social__medias__cont {
+    display: block;
+  }
+
+  .email {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .email::before {
+    border-top: 3px solid #f4f4f5;
+  }
 }

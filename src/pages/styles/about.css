@@ -32,11 +32,11 @@
 }
 
 .about-title {
-  width: 90% !important;
+  width: 90%;
 }
 
 .about-subtitle {
-  width: 85% !important;
+  width: 85%;
 }
 
 .about-left-side {
@@ -75,7 +75,7 @@
   text-decoration: none;
 }
 
-.card-text {
+.skills .card-text {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -83,29 +83,21 @@
   margin: 1em 0 2em 0;
 }
 
-.tag {
-  font: var(--card-tag-font);
-  color: var(--card-color);
-  background: var(--tertiary-color);
-  border-radius: 12px 12px;
-  padding: 0.5em 0.75em;
-}
-
-.card {
+.skills .card {
   border: none;
   background-color: #f7f7f7;
 }
 
-.card:hover {
+.skills .card:hover {
   background-color: #f0f0f0;
 }
 
-.card-title {
-  font-size: 1.25rem;
+.skills .card-title {
+  font-size: 1.5rem;
   color: var(--secondary-color);
 }
 
-.skills-card-body {
+.skills .skills-card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,12 +168,20 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about-container {
     padding-top: 60px;
   }
 
   .about-image-container {
     width: 80%;
+  }
+
+  .about-main {
+    width: 100%;
+  }
+
+  .about-subtitle {
+    width: 100%;
   }
 }

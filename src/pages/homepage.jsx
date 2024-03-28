@@ -37,7 +37,7 @@ const Homepage = () => {
     const handleScroll = () => {
       const scroll = Math.round(window.pageYOffset, 2);
 
-      const newLogoSize = 80 - (scroll * 3.3) / 10;
+      const newLogoSize = 80 - (scroll * 3.5) / 10;
 
       if (newLogoSize < oldLogoSize) {
         if (newLogoSize > 40) {
@@ -62,7 +62,7 @@ const Homepage = () => {
   const logoStyle = {
     display: 'flex',
     position: stayLogo ? 'fixed' : 'relative',
-    top: stayLogo ? '2.85vh' : 'auto',
+    top: stayLogo ? '3.5vh' : 'auto',
     zIndex: 999,
     border: stayLogo ? '1px solid white' : 'none',
     borderRadius: stayLogo ? '50%' : 'none',
