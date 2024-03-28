@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -35,7 +34,7 @@ const Projects = () => {
         <div className="content-wrapper">
           <div className="projects-logo-container">
             <div className="projects-logo">
-              <Logo width={46} />
+              <Logo width={46} link={false} />
             </div>
           </div>
           <div className="projects-container">
@@ -43,11 +42,8 @@ const Projects = () => {
               My Recent Works
             </div>
 
-            <div className="projects-list">
-              <div className="row row-cols-1 row-cols-md-3 g-4 cards_cont" id="portfolio_card" />
-              <div id="popup" className="hidden" />
-              <AllProjects />
-            </div>
+            {/* AllProjects includes the list and the popup now */}
+            <AllProjects />
           </div>
           <div className="page-footer">
             <Footer />
