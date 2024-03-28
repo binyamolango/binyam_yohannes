@@ -73,7 +73,6 @@
 
 .tag2 {
   display: inline-block;
-  margin-right: 5px;
   background-color: var(--tertiary-color);
   color: #fff;
   padding: 5px 10px;

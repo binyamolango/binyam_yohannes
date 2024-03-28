@@ -34,7 +34,7 @@ const Projects = () => {
         <div className="content-wrapper">
           <div className="projects-logo-container">
             <div className="projects-logo">
-              <Logo width={46} link={false} />
+              <Logo width={46} link />
             </div>
           </div>
           <div className="projects-container">

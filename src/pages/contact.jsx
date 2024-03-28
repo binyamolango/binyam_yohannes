@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Form, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
 import NavBar from '../components/common/navBar';
@@ -19,6 +20,49 @@ const Contact = () => {
 
   const currentSEO = SEO.find((item) => item.page === 'contact');
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const headers = {
+        'Content-Type': 'application/json',
+        'X-Master-Key': '$2a$10$qPVMXggkVAEfuO8LJO3aVOVDWvx2LF9eWZq/uEcedx.vfBBGIjMI6',
+        'X-Access-Key': '$2a$10$0/4aQ58zY3xViaZ8RQOT6e6SYP2FJmqBxMXPZzXeBVAq6hl.14.wC',
+      };
+      const response = await fetch('https://api.jsonbin.io/v3', {
+        headers,
+        method: 'POST',
+        body: JSON.stringify({
+          name, email, message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      return await response.json();
+    } catch (error) {
+      return { error: error.message };
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -35,44 +79,56 @@ const Contact = () => {
         <div className="content-wrapper">
           <div className="contact-logo-container">
             <div className="contact-logo">
-              <Logo width={46} />
+              <Logo width={46} link />
             </div>
           </div>
 
           <div className="contact-container">
             <div className="title contact-title">
-              Let&apos;s Get in Touch: Ways to Connect with Me
+              Let&apos;s Get in Touch
             </div>
 
-            <div className="subtitle contact-subtitle">
-              Thank you for your interest in getting in touch with
-              me. I welcome your feedback, questions, and
-              suggestions. If you have a specific question or
-              comment, please feel free to email me directly at
-              &nbsp;
-              {' '}
-              <a href={`mailto:${INFO.main.email}`}>
-                {INFO.main.email}
-              </a>
-              . I make an effort to respond to all messages within
-              24 hours, although it may take me longer during busy
-              periods. Alternatively, you can use the contact form
-              on my website to get in touch. Simply fill out the
-              required fields and I&apos;ll get back to you as soon as
-              possible. Finally, if you prefer to connect on
-              social media, you can find me on
-              {' '}
-              <a
-                href={INFO.socials.instagram}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {INFO.socials.instagram}
-              </a>
-              . I post regular updates and engage with my
-              followers there, so don&apos;t hesitate to reach out.
-              Thanks again for your interest, and I look forward
-              to hearing from you!
+            <div className="contact_row">
+              <h1>
+                I&apos;m always interested in hearing about new projects,
+                so if you&apos;d like to chat please get in touch.
+              </h1>
+
+              <Form onSubmit={handleSubmit} className="form">
+                <Form.Group controlId="username" className="mb-3">
+                  <Form.Control
+                    type="text"
+                    placeholder="Full name"
+                    maxLength="30"
+                    value={name}
+                    onChange={handleNameChange}
+                    required
+                  />
+                </Form.Group>
+                <Form.Group controlId="email" className="mb-3">
+                  <Form.Control
+                    type="email"
+                    placeholder="Email address"
+                    value={email}
+                    onChange={handleEmailChange}
+                    required
+                  />
+                </Form.Group>
+                <Form.Group controlId="textarea" className="mb-3">
+                  <Form.Control
+                    as="textarea"
+                    rows={4}
+                    placeholder="Hey I'd like to connect to..."
+                    maxLength="500"
+                    value={message}
+                    onChange={handleMessageChange}
+                    required
+                  />
+                </Form.Group>
+                <div className="project_btn_cont">
+                  <Button variant="secondary" type="submit" className="project_btn">Get in touch</Button>
+                </div>
+              </Form>
             </div>
           </div>
 
