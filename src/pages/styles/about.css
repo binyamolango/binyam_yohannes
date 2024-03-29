@@ -169,6 +169,10 @@
 }
 
 @media (max-width: 768px) {
+  .about-container {
+    padding-top: 100px;
+  }
+  
   .about-image-container {
     width: 80%;
   }
