@@ -14,7 +14,6 @@
   position: fixed;
   top: 3vh;
   z-index: 999;
-  border: 2px solid red;
 }
 
 .nav-background {
