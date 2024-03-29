@@ -4,17 +4,6 @@
   padding-top: 25px;
 }
 
-.projects-logo {
-  display: flex;
-  position: fixed;
-  border: 1px solid white;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  top: 4vh;
-  z-index: 999;
-  margin-top: -6px;
-}
-
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -28,10 +17,6 @@
 }
 
 @media (max-width: 600px) {
-  .projects-container {
-    padding-top: 60px;
-  }
-
   .projects-project {
     width: calc(100% / 2);
   }
