@@ -25,7 +25,6 @@ import myArticles from '../data/articles';
 import './styles/homepage.css';
 
 const Homepage = () => {
-  const [stayLogo, setStayLogo] = useState(false);
   const [logoSize, setLogoSize] = useState(80);
   const [oldLogoSize, setOldLogoSize] = useState(80);
 
@@ -37,19 +36,15 @@ const Homepage = () => {
     const handleScroll = () => {
       const scroll = Math.round(window.pageYOffset, 2);
 
-      const newLogoSize = 80 - (scroll * 3.5) / 10;
+      const newLogoSize = 80 - (scroll * 3.4) / 10;
 
       if (newLogoSize < oldLogoSize) {
         if (newLogoSize > 40) {
           setLogoSize(newLogoSize);
           setOldLogoSize(newLogoSize);
-          setStayLogo(false);
-        } else {
-          setStayLogo(true);
         }
       } else {
         setLogoSize(newLogoSize);
-        setStayLogo(false);
       }
     };
 
@@ -58,21 +53,6 @@ const Homepage = () => {
   }, [logoSize, oldLogoSize]);
 
   const currentSEO = SEO.find((item) => item.page === 'home');
-
-  const logoStyle = {
-    display: 'flex',
-    position: stayLogo ? 'fixed' : 'relative',
-    top: stayLogo ? '3.5vh' : 'auto',
-    zIndex: 999,
-    border: stayLogo ? '1px solid white' : 'none',
-    borderRadius: stayLogo ? '50%' : 'none',
-    boxShadow: stayLogo ? '0px 4px 10px rgba(0, 0, 0, 0.25)' : 'none',
-    marginTop: stayLogo ? '0' : '1.5em',
-  };
-
-  const homeStyle = {
-    marginTop: stayLogo ? '3.75em' : '0',
-  };
 
   return (
     <>
@@ -89,12 +69,12 @@ const Homepage = () => {
         <NavBar active="home" />
         <div className="content-wrapper">
           <div className="homepage-logo-container">
-            <div style={logoStyle}>
+            <div>
               <Logo width={logoSize} link={false} />
             </div>
           </div>
 
-          <div className="homepage-container" style={homeStyle}>
+          <div className="homepage-container">
             <div className="homepage-first-area">
               <div className="homepage-first-area-left-side">
                 <div className="title homepage-name">

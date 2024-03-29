@@ -8,11 +8,6 @@ import INFO from '../../data/user';
 import './styles/logo.css';
 
 const Logo = ({ width, link }) => {
-  if (link === undefined) {
-    // eslint-disable-next-line no-param-reassign
-    link = true;
-  }
-
   const imageElement = (
     <img src={INFO.main.logo} alt="logo" className="logo" width={width} />
   );
