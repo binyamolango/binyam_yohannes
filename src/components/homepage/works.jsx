@@ -32,7 +32,7 @@ const Works = () => (
               alt="self-employed"
               className="work-image"
             />
-            <div className="work-title">Self employed</div>
+            <div className="work-title">Self Employed</div>
             <div className="work-subtitle">
               Full Stack Web Developer
             </div>
