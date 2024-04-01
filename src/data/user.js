@@ -18,12 +18,8 @@ const INFO = {
   homepage: {
     name: 'Binyam Yohannes',
     title: 'Software Developer with QA Expertise',
-    description1:
-      'I am a full-stack web developer and QA engineer with over 2 years of experience in building and maintaining scalable, reliable systems. Passionate about math, problem-solving, and ensuring the quality and reliability of software applications with the aspiration to become a data scientist.',
-    description2:
-      'I have been working with JS from the beginning of my career. I have now experience in various languages, frameworks, and technologies, able to ramp up rapidly and efficiently and also expert in pair programming and remote work.',
-    description3:
-      'I am currently working at <a href="https://ablazelabs.com/" target="_blank" rel="noopener noreferrer" class="subtitle-desc3">Ablaze Labs</a> as a QA Engineer and freelance as a full-stack web developer.',
+    description:
+      'Embarking on a tech voyage, I’ve steered over 40 projects to success, honing software at Ablaze Labs with a 20% uptick in debugging efficiency, and my freelance endeavors echo not only a rich blend of JS, React, and RoR craftsmanship but also a deep understanding of pair programming and remote work dynamics. With mathematics as my compass, I navigate toward the data science horizon, eager to transform data into compelling stories. Beyond the screen, my guitar strings and nature’s trails are the harmonies and paths that keep my life’s narrative vibrant and wholehearted.',
   },
 
   about: {

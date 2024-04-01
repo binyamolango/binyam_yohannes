@@ -86,15 +86,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="subtitle homepage-subtitle">
-                  {INFO.homepage.description1}
-                </div>
-
-                <div className="subtitle homepage-subtitle">
-                  {INFO.homepage.description2}
-                </div>
-
-                <div className="subtitle homepage-subtitle">
-                  <div dangerouslySetInnerHTML={{ __html: INFO.homepage.description3 }} />
+                  {INFO.homepage.description}
                 </div>
               </div>
             </div>
