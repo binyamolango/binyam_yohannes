@@ -1,5 +1,5 @@
 import React from 'react';
-import { faBriefcase, faDownLong } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faDownLong, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Card from '../common/card';
@@ -53,6 +53,18 @@ const Works = () => (
           </div>
 
           <div className="work-button-cont">
+            <button type="button" className="work-button">
+              <a
+                href="https://github.com/binyamolango/binyamolango/files/14823795/Binyam_Y_CV.pdf"
+                target="_blank"
+                rel="noreferrer"
+                download
+              >
+                <span>My CV</span>
+                {'  '}
+                <FontAwesomeIcon icon={faDownload} />
+              </a>
+            </button>
             <button type="button" className="work-button">
               <a
                 href="https://www.linkedin.com/in/binyamyohannes/"
