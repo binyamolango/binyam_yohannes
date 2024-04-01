@@ -53,21 +53,3 @@
 .navbar__logo img {
   max-width: 100%;
 }
-
-@media (max-width: 600px) {
-  .navbar {
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 80%;
-    font-size: 80%;
-  }
-
-  .nav-background {
-    width: 220px;
-    height: 40px;
-  }
-
-  .nav-list {
-    margin-top: 13px;
-  }
-}
