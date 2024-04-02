@@ -150,4 +150,9 @@
   .homepage-first-area-left-side {
     width: 100%;
   }
+
+  .navbar__cont .navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

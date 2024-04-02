@@ -64,7 +64,9 @@ const Homepage = () => {
       </Helmet>
 
       <div className="page-content">
-        <NavBar active="home" />
+        <div className="navbar__cont">
+          <NavBar active="home" />
+        </div>
         <div className="content-wrapper">
           <div className="homepage-logo-container">
             <div>
