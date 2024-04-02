@@ -45,7 +45,7 @@ React, node, Visual Studio Code
 
 To use this project, Clone this repository to your desired folder by pasting this command in your command line interface:
 
-- `git clone https://github.com/binyamolango/react-portfolio.git`
+- `git clone https://github.com/binyamolango/binyam_yohannes.git`
 
 ### Prerequisites <a name="prerequisites"></a>
 
