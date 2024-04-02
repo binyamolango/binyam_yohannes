@@ -1,5 +1,3 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 

@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './styles/navBar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun } from '@fortawesome/free-regular-svg-icons';
 
 const NavBar = (props) => {
   const { active } = props;
@@ -75,11 +73,6 @@ const NavBar = (props) => {
                   </Link>
                 </li>
               </ul>
-            </div>
-            <div className="dark__mood">
-              <Link className="dark__mood__link">
-                <FontAwesomeIcon icon={faSun} />
-              </Link>
             </div>
           </div>
         </nav>

@@ -55,10 +55,9 @@ const Works = () => (
           <div className="work-button-cont">
             <button type="button" className="work-button">
               <a
-                href="https://github.com/binyamolango/binyamolango/files/14823795/Binyam_Y_CV.pdf"
+                href="https://docs.google.com/document/d/1TFuTLI5paesgSREVPy196Z83eAfcmClWDKgIZb51yvw/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
-                download
               >
                 <span>My CV</span>
                 {'  '}
