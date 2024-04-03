@@ -23,8 +23,8 @@ import myArticles from '../data/articles';
 import './styles/homepage.css';
 
 const Homepage = () => {
-  const [logoSize, setLogoSize] = useState(80);
-  const [oldLogoSize, setOldLogoSize] = useState(80);
+  const [logoSize, setLogoSize] = useState(100);
+  const [oldLogoSize, setOldLogoSize] = useState(100);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,7 +34,7 @@ const Homepage = () => {
     const handleScroll = () => {
       const scroll = Math.round(window.pageYOffset, 2);
 
-      const newLogoSize = 80 - (scroll * 3.4) / 10;
+      const newLogoSize = 100 - (scroll * 3.4) / 10;
 
       if (newLogoSize < oldLogoSize) {
         if (newLogoSize > 40) {
