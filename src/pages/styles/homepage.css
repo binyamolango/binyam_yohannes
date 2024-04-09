@@ -4,7 +4,7 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-top: 130px;
+  padding-top: 180px;
 }
 
 .homepage-container {
@@ -147,12 +147,18 @@
 }
 
 @media (max-width: 768px) {
+  .homepage-logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 150px;
+  }
+
   .homepage-first-area-left-side {
     width: 100%;
   }
 
   .navbar__cont .navbar {
-    width: 80%;
     margin: 0 auto;
   }
 }
