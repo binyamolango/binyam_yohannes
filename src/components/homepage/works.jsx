@@ -36,7 +36,7 @@ const Works = () => (
             <div className="work-subtitle">
               Full Stack Web Developer
             </div>
-            <div className="work-duration">12/2022 - Present</div>
+            <div className="work-duration">02/2023 - Present</div>
           </div>
 
           <div className="work">
