@@ -19,13 +19,13 @@ const INFO = {
     name: 'Binyam Yohannes',
     title: 'Software Developer with QA Expertise',
     description:
-      'Embarking on a tech voyage, I’ve steered over 20 projects to success, honing software at Ablaze Labs with a 20% uptick in debugging efficiency, and my freelance endeavors echo not only a rich blend of JS, React, and RoR craftsmanship but also a deep understanding of pair programming and remote work dynamics. With mathematics as my compass, I navigate toward the data science horizon, eager to transform data into compelling stories. Beyond the screen, my guitar strings and nature’s trails are the harmonies and paths that keep my life’s narrative vibrant and wholehearted.',
+      'Embarking on a tech voyage, I’ve steered over 40 projects to success, honing software at Ablaze Labs with a 20% uptick in debugging efficiency, and my freelance endeavors echo not only a rich blend of JS, React, and RoR craftsmanship but also a deep understanding of pair programming and remote work dynamics. With mathematics as my compass, I navigate toward the data science horizon, eager to transform data into compelling stories. Beyond the screen, my guitar strings and nature’s trails are the harmonies and paths that keep my life’s narrative vibrant and wholehearted.',
   },
 
   about: {
     title: 'Hey 👋, I’m Binyam Yohannes',
     description1:
-      "A full-stack web developer who loves to use technology to solve intricate challenges. With over 20 projects under my belt, I'm always motivated to tackle the next problem. As a QA engineer and software developer with expertise in pair programming and remote work, I'm fluent in various languages, frameworks, and technologies, so I efficiently ramp up to tackle new projects.",
+      "A full-stack web developer who loves to use technology to solve intricate challenges. With over 40 projects under my belt, I'm always motivated to tackle the next problem. As a QA engineer and software developer with expertise in pair programming and remote work, I'm fluent in various languages, frameworks, and technologies, so I efficiently ramp up to tackle new projects.",
     description2:
       "My passion for math and deep tech keeps me driving towards my aspiration to become a data scientist. But, I won't just limit myself to the digital and technical details sphere. My interest in areas like environmental, agricultural, and health issues drives me to focus on impactful solutions that bridge the gap between technical excellence and critical global matters.",
     description3:
