@@ -23,7 +23,7 @@ const INFO = {
   },
 
   about: {
-    title: 'Hey 👋, I’m Binyam Y. Olango',
+    title: 'Hey 👋, I’m Binyam',
     description1:
       "An ICT technician and web developer who loves to use technology to solve intricate challenges. With over 40 projects under my belt, I'm always motivated to tackle the next problem. As an ICT technician and web developer with expertise in pair programming and remote work, I'm fluent in various languages, frameworks, and technologies, so I efficiently ramp up to tackle new projects.",
     description2:
