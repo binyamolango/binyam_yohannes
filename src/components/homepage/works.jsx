@@ -15,6 +15,18 @@ const Works = () => (
         <div className="works-body">
           <div className="work">
             <img
+              src="./unops.jpeg"
+              alt="ablaze-labs"
+              className="work-image"
+            />
+            <div className="work-title">UNOPS</div>
+            <div className="work-subtitle">
+              ICT Helpdesk Intern
+            </div>
+            <div className="work-duration">06/2024 - Present</div>
+          </div>
+          <div className="work">
+            <img
               src="./ablaze-labs.png"
               alt="ablaze-labs"
               className="work-image"
@@ -23,7 +35,7 @@ const Works = () => (
             <div className="work-subtitle">
               QA Engineer
             </div>
-            <div className="work-duration">01/2024 - Present</div>
+            <div className="work-duration">01/2024 - 06/2024</div>
           </div>
 
           <div className="work">
@@ -36,7 +48,7 @@ const Works = () => (
             <div className="work-subtitle">
               Full Stack Web Developer
             </div>
-            <div className="work-duration">02/2023 - Present</div>
+            <div className="work-duration">02/2023 - 06/2024</div>
           </div>
 
           <div className="work">
