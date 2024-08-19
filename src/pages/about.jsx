@@ -63,7 +63,7 @@ const About = () => {
                 <div className="about-image-container">
                   <div className="about-image-wrapper">
                     <img
-                      src="logo.png"
+                      src="UNOPS_pic.png"
                       alt="about"
                       className="about-image"
                     />
