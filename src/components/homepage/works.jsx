@@ -14,15 +14,6 @@ const Works = () => (
       body={(
         <div className="works-body">
           <div className="work">
-            <img
-              src="./unops.jpeg"
-              alt="ablaze-labs"
-              className="work-image"
-            />
-            <div className="work-title">UNOPS</div>
-            <div className="work-subtitle">
-              ICT Helpdesk Intern
-            </div>
             <div className="work-duration">06/2024 - Present</div>
           </div>
           <div className="work">
